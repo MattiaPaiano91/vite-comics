@@ -134,6 +134,7 @@ footer{
 }
 .container{
     width: $fullSpace;
+    height: calc(100vh - 750px);
      background-color: $footer-color;
     .footer-bottom{
         width: $containerSize;
@@ -163,6 +164,7 @@ footer{
         h2{
             text-transform: uppercase;
             color: $dc-color;
+            margin: 0;
         }
     }
 }

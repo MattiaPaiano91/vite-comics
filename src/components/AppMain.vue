@@ -20,7 +20,7 @@ export default {
                     description: 'COMIC SHOP LOCATOR'
                 },
                 {
-                    img:'public\vue-dc-comics-1\img\buy-dc-power-visa.svg',
+                    img:'/vue-dc-comics-1/img/buy-dc-power-visa.svg',
                     description: 'DC POWER VISA'
                 },
                 
@@ -92,7 +92,7 @@ export default {
                         display: flex;
                         align-items: center;
                         img{
-                            width: 70px;
+                            width: 50px;
                             margin-right: 10px;
                         }
                     }
