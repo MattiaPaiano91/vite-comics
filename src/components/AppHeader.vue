@@ -87,11 +87,13 @@ export default {
                 
                 li{
                     list-style: none;
-                    margin-right: 15px;
+                    margin-right: 20px;
                     text-align: end;
                     a{
                         text-decoration: none;
                         color: black;
+                        font-size: 14px;
+                        font-weight: 600;
                     }
                 }
             }
