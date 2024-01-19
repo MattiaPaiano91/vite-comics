@@ -190,7 +190,7 @@ export default {
     }
 
     button {
-      margin: 0 auto 20px;
+      margin: 20px auto 20px;
       width: 180px;
       height: 30px;
       background-color: $dc-color;

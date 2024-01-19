@@ -88,11 +88,21 @@ export default {
                     list-style: none;
                     margin-left: 20px;
                     text-align: end;
+                    height: $sectionHeight;
+                    line-height: $sectionHeight;
                     a{
                         text-decoration: none;
                         color: black;
                         font-size: 14px;
                         font-weight: 600;
+                 
+                    }
+                    &:hover{
+                        border-bottom: 4px solid  $dc-color;
+                        color: $dc-color;
+                    }
+                    &:hover > a{
+                        color: $dc-color;
                     }
                 }
             }
