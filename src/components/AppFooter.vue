@@ -86,7 +86,7 @@ export default {
             <li>
               <h2>follow us</h2>
             </li>
-            <li v-for="(elem, i) in footerImg">
+            <li v-for="(elem, i) in footerImg" :key="i">
               <img :src="elem.img" alt="" />
             </li>
           </ul>

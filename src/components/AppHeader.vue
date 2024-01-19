@@ -56,7 +56,7 @@ export default {
             </div>
             <nav>
                 <ul>
-                    <li v-for="(elem, i) in navlist">
+                    <li v-for="(elem, i) in navlist" :key="i">
                         <a :href="elem.link">{{ elem.pageName }}</a>
                     </li>
                 </ul>
