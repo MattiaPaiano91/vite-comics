@@ -81,13 +81,12 @@ export default {
             ul{
                 display: flex;
                 height: $sectionHeight;
-                width: $containerSize;
                 align-items: center;
-                justify-content:center ;
+                justify-content:end;
                 
                 li{
                     list-style: none;
-                    margin-right: 20px;
+                    margin-left: 20px;
                     text-align: end;
                     a{
                         text-decoration: none;

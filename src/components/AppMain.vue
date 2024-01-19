@@ -84,10 +84,9 @@ export default {
                     widows: $fullSpace;
                     height: $sectionHeight;
                     display: flex;
-                    align-items: center;
                     color: white;
                     .img-box{
-                        width: calc(100% / 6);
+                        width: calc(100% / 5);
                         margin-left: 20px;
                         display: flex;
                         align-items: center;
