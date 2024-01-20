@@ -103,8 +103,10 @@ export default {
 footer {
   width: $fullSpace;
   height: 300px;
-  background-image: url("../../public/vue-dc-comics-1/img/footer-bg.jpg");
-  z-index: -2;
+  background-image: url("/vue-dc-comics-1/img/footer-bg.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
   h2 {
     color: white;
     margin-top: 30px;

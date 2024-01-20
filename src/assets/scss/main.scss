@@ -3,9 +3,12 @@
 
 .active{
     border-bottom: 4px solid $dc-color;
-        color: $dc-color;
         a.active-link {
             color: $dc-color;
         }
     }
+
+html{
+font-family: Arial, Helvetica, sans-serif;
+}
     

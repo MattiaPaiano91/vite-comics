@@ -3,6 +3,7 @@ import ProductSection from "./productSection.vue";
 export default {
   data() {
     return {
+      counter:null,
       items: [
         {
           img: "/vue-dc-comics-1/img/buy-comics-digital-comics.png",
@@ -129,9 +130,10 @@ export default {
         <ProductSection
           v-for="(elem, i) in comics"
           :key="i"
+
           :image="elem.thumb"
           :description="elem.series"
-          :comics="comics[i]"
+          :comics="elem"
         />
       </section>
       <button>LOAD MORE</button>
@@ -163,9 +165,12 @@ export default {
     text-align: center;
     .jumbo-container {
       width: $fullSpace;
-      height: 350px;
-      background-image: url("../../public/vue-dc-comics-1/img/jumbotron.jpg");
+      height: 500px;
+      background-image: url("/vue-dc-comics-1/img/jumbotron.jpg");
       position: relative;
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
         .absolute-div {
             position: absolute;
             top:96%;
@@ -228,3 +233,10 @@ export default {
   }
 }
 </style>
+
+
+
+
+
+
+
