@@ -7,7 +7,8 @@ export default {
   },
   props: {
     image:String,
-    description:String
+    description:String,
+    comics:Object
   },
 };
 </script>
@@ -16,10 +17,10 @@ export default {
     
         <div class="card">
             <div class="img-box">
-                <img :src="image" :alt="description">
+                <img :src="comics.thumb" :alt="comics.series">
             </div>
             <div>
-                {{ description }}
+                {{ comics.series }} 
             </div>
         </div>
     

@@ -1,3 +1,11 @@
 @use "partials/variables.scss" as *;
 @use "partials/mixins.scss" as *;
 
+.active{
+    border-bottom: 4px solid $dc-color;
+        color: $dc-color;
+        a.active-link {
+            color: $dc-color;
+        }
+    }
+    

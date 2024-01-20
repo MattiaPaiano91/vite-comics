@@ -131,6 +131,7 @@ export default {
           :key="i"
           :image="elem.thumb"
           :description="elem.series"
+          :comics="comics[i]"
         />
       </section>
       <button>LOAD MORE</button>
@@ -190,7 +191,7 @@ export default {
     }
 
     button {
-      margin: 20px auto 20px;
+      margin: 20px auto 30px;
       width: 180px;
       height: 30px;
       background-color: $dc-color;
