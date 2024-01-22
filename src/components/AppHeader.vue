@@ -2,65 +2,58 @@
 export default {
   data() {
     return {
+      counter: null,
       navlist: [
         {
           pageName: "CHARACTERS",
-          link: "#nogo",
-          opened:false
+          link: "#nogo"
+         
         },
         {
           pageName: "COMICS",
-          link: "#nogo",
-          opened:false
+          link: "#nogo"
+         
         },
         {
           pageName: "MOVIES",
-          link: "#nogo",
-          opened:false
+          link: "#nogo"
+         
         },
         {
           pageName: "TV",
-          link: "#nogo",
-          opened:false
+          link: "#nogo"
+         
         },
         {
           pageName: "GAMES",
-          link: "#nogo",
-          opened:false
+          link: "#nogo"
+         
         },
         {
           pageName: "COLLECTIBLES",
-          link: "#nogo",
-          opened:false
+          link: "#nogo"
+         
         },
         {
           pageName: "VIDEOS",
-          link: "#nogo",
-          opened:false
+          link: "#nogo"
+         
         },
         {
           pageName: "FANS",
-          link: "#nogo",
-          opened:false
+          link: "#nogo"
+         
         },
         {
           pageName: "NEWS",
-          link: "#nogo",
-          opened:false
+          link: "#nogo"
+         
         },
       ],
     };
   },
   methods: {
-    openedLink(i){
-        if(this.navlist[i].opened == false){
-          this.navlist[i].opened=true
-        }
-        else{
-          this.navlist[i].opened = false
-        }
-        
-    }
+ 
   },
 };
 </script>
@@ -75,10 +68,10 @@ export default {
         <ul>
           <li 
           v-for="(elem, i) in navlist" 
-           :class="{ 'active': elem.opened }"
+           :class="{ 'active': counter == i }"
           >
-            <a @click="openedLink(i)" 
-            :class="{ 'active-link': elem.opened }"
+            <a @click="counter = i" 
+            :class="{ 'active-link': counter == i }"
             :href="elem.link">{{ elem.pageName }}</a>
           </li>
         </ul>

@@ -4,19 +4,19 @@ export default {
     return {
       footerImg: [
         {
-          img: "public/vue-dc-comics-1/img/footer-facebook.png",
+          img: "/vue-dc-comics-1/img/footer-facebook.png",
         },
         {
-          img: "public/vue-dc-comics-1/img/footer-periscope.png",
+          img: "/vue-dc-comics-1/img/footer-periscope.png",
         },
         {
-          img: "public/vue-dc-comics-1/img/footer-pinterest.png",
+          img: "/vue-dc-comics-1/img/footer-pinterest.png",
         },
         {
-          img: "public/vue-dc-comics-1/img/footer-twitter.png",
+          img: "/vue-dc-comics-1/img/footer-twitter.png",
         },
         {
-          img: "public/vue-dc-comics-1/img/footer-youtube.png",
+          img: "/vue-dc-comics-1/img/footer-youtube.png",
         },
       ],
     };
